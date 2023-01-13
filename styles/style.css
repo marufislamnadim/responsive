@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --title-color: #562EFF;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #F3F1FF;
+}
+/* common or utilitise */
+hr{
+    border: 1px solid #D1D1D1;
+    width: 807px;
+    margin: 30px 33px;
+}
+/* top players */
+.container{
+    width: 870px;
+    height: 680px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+.section-title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--title-color);
+    margin: 0px 0px 40px 35px;
+    padding-top: 35px;
+}
+.top-players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 80px;
+    grid-row-gap: 30px;
+}
+.plyer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+.plyer>img{
+    width: 56px;
+    height: 56px;
+}
+/* blog section */
+.blog-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 45px;
+    grid-row-gap: 26px;
+}
+.top-blogs>h2{
+    padding-top: 0;
+}
+.blog{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 16px;
+    margin: 0px 30px;
+}
+.thumbnail>img{
+    width: 177px;
+    height: 117px;
+}
+.blog-title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+    margin-bottom: 6px;
+}
+.blog-info>p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #9F9F9F;
+}
+.blog-info .author-name{
+    color: #562EFF;
+}
