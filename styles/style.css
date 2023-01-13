@@ -7,7 +7,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background: #F3F1FF;
+    box-sizing: border-box;
 }
 /* common or utilitise */
 hr{
@@ -15,7 +15,49 @@ hr{
     width: 807px;
     margin: 30px 33px;
 }
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* header */
+header{
+    background-color: #562EFF;
+    width: 1440px;
+    height: 94px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    color: #FFFFFF;
+}
+
+nav > .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+nav > .logo > img{
+    width: 40.42px;
+    height: 51px;
+}
+.menu > ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
 /* top players */
+.main{
+    background: #F3F1FF;
+    /* background-color: aqua; */
+    /* width: 100vw; */
+    width: 1440px;
+}
 .container{
     width: 870px;
     height: 680px;
@@ -82,4 +124,71 @@ hr{
 }
 .blog-info .author-name{
     color: #562EFF;
+}
+/* courses-container */
+.courses-container{
+    margin-top: 30px;
+    width: 870px;
+    height: 370px;
+}
+.courses-container>.section-title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--title-color);
+    margin: 23px 0px 10px 20px;
+    padding-top: 35px;
+}
+.course-about{
+    display: flex;
+    gap: 23px;
+    justify-content: space-evenly;
+}
+.course{
+    /* margin-left: 30px; */
+    padding: 13px;
+    width: 240px;
+    height: 250px;
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+
+}
+.course > .thumb{
+    width: 226px;
+    height: 106px;
+
+}
+.course > .thumb>img{
+    width: 224px;
+    height: 104px;
+}
+.course-details>.course-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    margin: 19px 0 7px 0;
+}
+.course-details>.instructor{
+    margin: 0px 0 19px 0;
+}
+.ratings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+.rating-info>i{
+    color: goldenrod;
+}
+.rating-time{
+    background-color: goldenrod;
+    width: 95px;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    
 }
